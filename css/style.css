@@ -250,6 +250,8 @@ button.green:hover{
     padding: 30px;
 }
 
+
+
 .text.inline{
     height: 25px;
     vertical-align: middle;
@@ -432,6 +434,11 @@ ul.nav li:nth-child(3)  {
 
     a, span{
     color: #fff;
+}
+
+.futter-text{
+    color: rgb(102, 195, 207);
+    text-align: center !important; 
 }
 
     .navbar{

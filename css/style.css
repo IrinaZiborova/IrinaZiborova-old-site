@@ -137,7 +137,7 @@ img.point{
 .personal_statement{
     background-color: #48dfed;
     text-align: center;
-    padding: 80px;
+    padding: 80px 15px;
 }
 .personal_statement>p.big{
     color: #262626;

@@ -44,6 +44,17 @@ h2{
 h2.black{
     color: #262626;
     margin-top: 0px;
+    display: inline-block;
+}
+
+h2.middle-text{
+    display: inline-block;
+    margin: 0px;
+    width: 100%;
+}
+
+h2.middle-text.green-text{
+    color: rgb(102, 195, 207);
 }
 
 .menu{
@@ -78,7 +89,7 @@ ul.menu>li.right {
     left: 50%;
 }
 
-a, span, h2{
+a, span, h2, h4{
     color: rgb(102, 195, 207);
     text-decoration: none;
 }
@@ -102,6 +113,11 @@ h3.ico a{
     text-decoration: none;
 }
 
+h6{
+    font-family: OpenSans-Light;
+    color: #1f1f1f;
+}
+
 p.untertext{
     font-family: OpenSans-Semibold;
     font-size:;
@@ -112,7 +128,7 @@ p.untertext{
 p{
     font-family: OpenSans-Light;
     font-size:;
-    color: #fff;
+    color: #000;
 }
 
 .col-md-12.col-sm-12.col-xl-12.col-sm-12.text-center.center-block{
@@ -131,6 +147,21 @@ img.point{
 /*banner1*/
 .banner1{
     width: 100%;
+}
+
+.video{
+    width: 100%;
+    background-image: url(../code.gif);
+    background-size: cover;
+}
+
+.grad{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(left top, rgba(6,239,248,0.7),rgba(143,119,240,0.9), rgba(143,119,240,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left top, rgba(6,239,248,0), rgba(241,33,234,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left top, rgba(6,239,248,0), rgba(241,33,234,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left top, rgba(6,239,248,0), rgba(241,33,234,1)); /* Standard syntax (must be last) */
 }
 
 /*about*/
@@ -169,7 +200,7 @@ button.black:hover{
     transition: 0.5s;
 }
 
-button.green{
+button.greenbtn{
     border: 1px solid rgb(102, 195, 207);
     border-radius: 50px;
     background-color: transparent;
@@ -180,7 +211,7 @@ button.green{
     line-height: 3em;
 }
 
-button.green:hover{
+button.greenbtn:hover{
     border: 1px solid rgb(102, 195, 207);
     border-radius: 50px;
     background-color: rgb(102, 195, 207);
@@ -194,55 +225,7 @@ button.green:hover{
     width: 200px;
 }
 
-/*portfolio*/
-.left1, .right1{
-    overflow: hidden;
-    height: 500px;
-}
 
-.left1{
-    background-color: #f8b6c4;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.right1{
-    background-color: #64c6cf;
-}
-
-.project{
-    height: 500px;
-    text-align: center;
-}
-
-.row.photo{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: middle;
-}
-
-
-
-.project1{
-    background-image: url(../img/project1/1.png);
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 70%;
-    height: 70%;
-    margin: 0 auto;
-}
-.project1:hover{
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-
-
-.project2{
-    background-color: #fff;
-  -webkit-transition: all 600ms easeOutCirc;
-  transition:         all 600ms easeOutCirc; }
 
 /*futter*/
 .futter{
@@ -256,7 +239,7 @@ button.green:hover{
     height: 25px;
     vertical-align: middle;
 }
-span.phone, span.email, .one, .two, .tree, .four{
+span.phone, span.email, .one, .two, .tree, .four, .plus{
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -419,6 +402,8 @@ ul.nav li:nth-child(3)  {
     .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
         max-height: 100vh;
     }
+
+
 }
 
 @media (max-width: 767px) {
@@ -432,8 +417,20 @@ ul.nav li:nth-child(3)  {
         display: table;
     }
 
-    a, span{
+.description{
+    height: 100%;
+    }
+.portfolio{
+    padding-top: 50px !important;
+}
+
+a, span{
     color: #fff;
+}
+
+.toclose{
+background-size: 30% !important;
+
 }
 
 .futter-text{
@@ -467,6 +464,245 @@ ul.nav li:nth-child(3)  {
 
 }
 
+/*Portfolio*/
+.portfolio{
+    padding-top: 140px;
+}
+
+.project_prev{
+    padding-top: 300px;
+}
+.project1{
+    background-image: url(../img/Projects/1Nicetop.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project2{
+    background-image: url(../img/Projects/2Marcopolo.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project3{
+    background-image: url(../img/Projects/3phone.gif);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project4{
+    background-image: url(../img/Projects/4dindin.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project5{
+    background-image: url(../img/Projects/5Andeor.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project6{
+    background-image: url(../img/Projects/6.gif);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project7{
+    background-image: url(../img/Projects/7Baltia.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project8{
+    background-image: url(../img/Projects/8pionica.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project9{
+    background-image: url(../img/Projects/9Nitka.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project10{
+    background-image: url(../img/Projects/10AD.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project11{
+    background-image: url(../img/Projects/11Anna.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project12{
+    background-image: url(../img/Projects/12Melia.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project13{
+    background-image: url(../img/Projects/13Invitation.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project_prev_side2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #48dfed; 
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.project_prev:hover .project_prev_side2{
+    display: flex;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.plus{
+background-image: url(../img/ico/plus.png);
+background-size: 15%;
+background-position: 50% 50%;
+width: 100%;
+height: 40%;
+}
+
+.title{
+    position: absolute;
+    bottom: 0px;
+    width: 100%
+}
+
+.lastblock{
+   background-color: #48dfed;
+   height: 300px;
+   text-align: center;
+   vertical-align: middle;
+   align-items: center;
+   display: flex; 
+}
+
+/*project*/
+
+.middle{
+    display: inline-block;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.green{
+    height: 140px;
+    background-color: rgb(102, 195, 207);
+    vertical-align: middle;
+    align-items: center;
+    display: flex; 
+}
+
+.header{
+height: 140px;
+}
+.back, .next{
+display: block;
+background-size: 100%;
+background-position: 50% 50%;
+width: 70px;
+height: 70px;
+background-repeat: no-repeat;
+}
+
+
+.back{
+    background-image: url(../img/ico/back2.png);
+}
+
+.back:hover{
+    background-image: url(../img/ico/back.png);
+}
+.toclose{
+display: block;
+background-image: url(../img/ico/toclose2.png);
+background-size: 40%;
+background-position: 50% 50%;
+width: 100%;
+height: 70px;
+background-repeat: no-repeat;
+}
+
+.toclose:hover{
+  background-image: url(../img/ico/close.png);  
+}
+.next{
+    background-image: url(../img/ico/next2.png);
+}
+
+.next:hover{
+    background-image: url(../img/ico/next.png);
+}
+
+.flex_display{
+    display: flex;
+    align-items: center;
+}
+
+.forcarousel{
+margin: 0px;
+padding: 0px;
+}
+
+.forcarousel-gif{
+    padding-top: 500px;
+    height: 500px;
+    background-image: url(../img/Projects/3phone.gif);
+    background-size:cover;
+   background-position: center center;
+}
+
+/*.forcarousel-gif2{
+    padding-top: 500px;
+    height: 500px;
+    width: 500px;
+    background-image: url(../img/Projects/6.gif);
+    background-size:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}*/
+
+.carousel-inner .item{ 
+   height:500px; 
+   background-size:cover;
+   background-position: center center;
+}
+
+.description{
+    display: flex;
+    height: 500px;
+    align-items:center;
+    }
 
 
 /* END */

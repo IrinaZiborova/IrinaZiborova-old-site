@@ -509,7 +509,7 @@ background-size: 30% !important;
     background-repeat: no-repeat;
 }
 .project7{
-    background-image: url(../img/Projects/7Baltia.png);
+    background-image: url(../img/Projects/7Baltia.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -539,7 +539,7 @@ background-size: 30% !important;
     background-repeat: no-repeat;
 }
 .project12{
-    background-image: url(../img/Projects/12Melia.png);
+    background-image: url(../img/Projects/12Melia.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -590,6 +590,11 @@ background-size: 15%;
 background-position: 50% 50%;
 width: 100%;
 height: 40%;
+opacity: 0.5;
+}
+
+.plus{
+    opacity: 1;
 }
 
 .title{

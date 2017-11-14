@@ -89,11 +89,11 @@ ul.menu>li.right {
     left: 50%;
 }
 
-a, span, h2, h4{
+a, span.text, h2, h4, .text2{
     color: rgb(102, 195, 207);
     text-decoration: none;
 }
-a:hover, span:hover, h3.ico>a:hover{
+a:hover, span.text:hover, h3.ico>a:hover, span.active{
     color: rgb(136, 114, 241);
     text-decoration: none;
     transition: 0.5s;
@@ -191,6 +191,10 @@ button.black{
     width: 150px;
     line-height: 3em;
     transition: 0.5s;
+}
+
+button.black.no-margin{
+    margin: 30px auto;
 }
 button.black:hover{
     border: 1px solid #1f1f1f;
@@ -424,6 +428,10 @@ ul.nav li:nth-child(3)  {
     padding-top: 50px !important;
 }
 
+.contact{
+    padding-top: 50px;
+}
+
 a, span{
     color: #fff;
 }
@@ -462,6 +470,10 @@ background-size: 30% !important;
         padding-top: 100px  !important;
     }
 
+}
+
+.elementCursorNotAllowed {
+    cursor: not-allowed;
 }
 
 /*Portfolio*/
@@ -590,11 +602,10 @@ background-size: 15%;
 background-position: 50% 50%;
 width: 100%;
 height: 40%;
-opacity: 0.5;
 }
 
-.plus{
-    opacity: 1;
+.plus:hover{
+    background-image: url(../img/ico/plus2.png);
 }
 
 .title{
@@ -708,6 +719,31 @@ padding: 0px;
     height: 500px;
     align-items:center;
     }
+
+/*contact*/
+
+.contact{
+    padding-top: 140px;
+}
+
+.white{
+    background-color: #48dfed;
+}
+
+.empty{
+    padding-top: 100px;
+}
+
+.form-control{
+    background-color: transparent;
+    border-radius: 30px;
+    border:1px solid #1f1f1f;
+    color: #1f1f1f;
+    text-align: center;
+    font-family: OpenSans-Light;
+    width: 50%;
+
+}
 
 
 /* END */

@@ -756,9 +756,7 @@ padding: 0px;
   height:800px;
   padding-top:170px;
 }
-.inline{
-  display: inline;
-}
+
 @keyframes move1{
     from {
     left:0px;

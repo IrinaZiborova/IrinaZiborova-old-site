@@ -8,7 +8,7 @@
 }
 
 body{
-  
+  font-family: sans-serif;
 }
 
 /* Text styles */
@@ -51,6 +51,7 @@ h2.black{
     color: #262626;
     margin-top: 0px;
     display: inline-block;
+    width: 100%;
 }
 
 h2.middle-text{
@@ -120,7 +121,7 @@ h3.ico a{
 }
 
 h6{
-    font-family: OpenSans-Light;
+    font-family: OpenSans-Bold;
     color: #1f1f1f;
 }
 
@@ -383,8 +384,23 @@ ul.nav li:nth-child(3)  {
 
 .navbar-default {
     background-color: #FFF;
-    border-color: #FFF;
+
 }
+div.navbar-header{
+background: #131313;
+}
+.navbar-default .navbar-toggle{
+    border-color: rgb(102, 195, 207);
+}
+
+.navbar-default .navbar-toggle .icon-bar, .small-menu{
+    background-color: rgb(102, 195, 207);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border:none;
+}
+
 
 @media (min-width: 768px) {
     .navbar-nav > li > a {
@@ -442,10 +458,6 @@ a, span{
     color: #fff;
 }
 
-.toclose{
-background-size: 30% !important;
-
-}
 
 .futter-text{
     color: rgb(102, 195, 207);
@@ -456,8 +468,8 @@ background-size: 30% !important;
         height: 50px !important;
     }
     .navbar-collapse{
-        background-color: #4F5759;
-        padding-bottom: 100px;
+        background-color: #131313;
+        padding-bottom: 150px;
     }
     ul.nav li:nth-child(n) {
         margin-top: 13px !important;
@@ -574,12 +586,13 @@ background-size: 30% !important;
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: #48dfed; 
+    background-color: rgba(72, 223, 237, 0.7); 
     display: none;
     margin: 0px;
     padding: 0px;
     vertical-align: middle;
     align-items: center;
+
 }
 
 .project_prev:hover .project_prev_side2{
@@ -668,7 +681,7 @@ background-repeat: no-repeat;
 .toclose{
 display: block;
 background-image: url(../img/ico/toclose2.png);
-background-size: 40%;
+background-size: 70px;
 background-position: 50% 50%;
 width: 100%;
 height: 70px;
@@ -680,6 +693,7 @@ background-repeat: no-repeat;
 }
 .next{
     background-image: url(../img/ico/next2.png);
+    float: right;
 }
 
 .next:hover{
@@ -747,8 +761,12 @@ padding: 0px;
     color: #1f1f1f;
     text-align: center;
     font-family: OpenSans-Light;
-    width: 50%;
 
+
+}
+
+.form-horizontal .form-group{
+    margin: 0px;
 }
 /*animation*/
 .banner{
@@ -756,9 +774,7 @@ padding: 0px;
   height:800px;
   padding-top:170px;
 }
-.inline{
-  display: inline;
-}
+
 @keyframes move1{
     from {
     left:0px;

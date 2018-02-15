@@ -154,6 +154,7 @@ img.point{
 /*banner1*/
 .banner1{
     width: 100%;
+    overflow: hidden;
 }
 
 .video{
@@ -175,13 +176,16 @@ img.point{
 .personal_statement{
     background-color: #48dfed;
     text-align: center;
-    padding: 80px 15px;
+    padding: 50.5px 15px;
 }
 .personal_statement>p.big{
     color: #262626;
-    font-size: 20pt;
+    font-size: 14pt;
     font-family: OpenSans-Light;
 
+}
+.me{
+    
 }
 
 .services{
@@ -236,7 +240,9 @@ button.greenbtn:hover{
     width: 200px;
 }
 
-
+.row{
+    margin-right: 0px;
+}
 
 /*futter*/
 .futter{
@@ -776,15 +782,11 @@ padding: 0px;
 }
 
 @keyframes move1{
-    from {
-    left:0px;
-    top:0px;
-  }
-  50% {
+  30%{
     left: 500px;
     top:0px;
   }
-  80%{
+  50%{
     left:300px;
     top: 135px;
   }
@@ -799,27 +801,20 @@ padding: 0px;
 }
 
 @keyframes move2{
-from {
-    left:0px;
-  }
-50% {
+30%{
     left: 500px;
   }
-80% {
+50% {
     left: 1060px;
   opacity:1;
   }
 to {
-    left: 1260px;
+   left: 1060px;
   opacity:0;
   }
 }
 @keyframes move3 {
-from {
-left: 120px;
-top: -128px;
-  }
-50% {
+20%{
 left: 620px;
 top: -128px;
 color: white;
@@ -833,25 +828,10 @@ color: white;
     -ms-transform-origin:0 100%;
     transform-origin:0 100%;
   }
-65% {
-  left:900px;
-  top: -128px;
-  color: rgb(102, 195, 207);
-  transform:        scale(2);
- -moz-transform:    scale(2); 
- -webkit-transform: scale(2); 
- -o-transform:      scale(2); 
- -ms-transform:     scale(2);
- -webkit-transform-origin: 0 100%;
-    -moz-transform-origin:0 100%;
-    -o-transform-origin:0 100%;
-    -ms-transform-origin:0 100%;
-    transform-origin:0 100%;
-
-  }
-75%, to {
-  left:1035px;
+40%, to {
+  left:950px;
   top:-160px;
+  color: rgb(102, 195, 207);
   transform:         scale(0);
  -moz-transform:    scale(0); 
  -webkit-transform: scale(0); 
@@ -865,21 +845,21 @@ color: white;
 }
 
 @keyframes point{
-from {
+from{
     left:-3px;
   opacity:0;
   }
 
-  70%{
+30%{
     opacity:0;
   }
-80% {
+50% {
     left: 1053px;
   opacity:1;
   }
 
 to {
-    left: 1253px;
+    left: 1053px;
     opacity:0;
   }
 }
@@ -891,54 +871,69 @@ to {
   color: white;
   font-family: OpenSans-Bold;
   animation-fill-mode: forwards;
+
 }
 .move1{
-  animation: move1 10s ease-out 1;
+  animation: move1 5s ease-out 1;
   animation-fill-mode: forwards;
+  width: 760px;
   }
   
 .move2{
-  animation: move2 10s ease-out 1;
+  animation: move2 5s ease-out 1;
   animation-fill-mode: forwards;
+  width: 100px;
   } 
 .move3{
-left: 120px;
+left: 620px;
 top: -128px;
-  animation: move3 10s ease-out 1;
+  animation: move3 5s ease-out 1;
   animation-fill-mode: forwards;
+  width: 600px;
   }
 .point{
   width:10px;
   height:10px;
   background-color: rgb(102, 195, 207);
-  animation: point 10s ease-out 1;
+  animation: point 5s ease-out 1;
   top:100px;
   left:-18px;
   border-radius:50%;
   animation-fill-mode: forwards;
 }
 
+span.MOBILENAME{
+    display: none;
+    }
+
 @media (max-width: 768px){
+    span.MOBILENAME{
+        display: inline-block;
+        color: rgb(102, 195, 207);
+        font-size: 13pt;
+        line-height: 50px;
+    } 
+
     .banner{
-        max-height: 200px;
+        max-height: 300px;
         padding-top: 70px; 
     }
 
     .move1, .move2, .move3, .point{
-        animation: none;
-        font-size: 30px;
-
-    }
-    .move2, .move3, .point{
         display: none;
     }
 
     h1{
-        text-align: left;
-        margin: 0px;
+        text-align: center;
         font-size: 30px;
+        padding-top: 50px;
+        width: 100%;
+        margin-left: 0px;
     }
 
 }
-
+@media (min-width: 1920px){
+.svg-responsive {
+    width: 30%;
+}
 /* END */

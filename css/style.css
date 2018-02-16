@@ -586,6 +586,13 @@ a, span{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.project14{
+    background-image: url(../img/Projects/14Penenza.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .project_prev_side2{
     position: absolute;
     top: 0px;

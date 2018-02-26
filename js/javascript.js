@@ -1,14 +1,15 @@
-//$(function(){
-//	var color = ['#000','#fff','#000'];
-//	var i = 0;
-//	$('#left').click(function(){
-//		if (i < color.length){
-//			i++;
-//			$(this).animate({ top: '-=500px' }, 600, 'easeOutCirc', function () {
-//				$(this).css('background-color', color[i]);
-//			});
-//		}
-//	});
-//});
-
-//elem.scrollTop += 500
+$(document).ready(function() { 
+	function box (){
+	var height = $('#image').height();
+	if ($(window).width() >= '768'){
+	$('#aboutme').height(height);
+	}
+	else{
+	$('#aboutme').height(400);	
+	}
+	}
+	box();
+	$(window).resize(function() {
+		box();
+	});
+	});
